@@ -2,7 +2,7 @@
 import * as React from "react";
 import Link from "next/link";
 
-export default function DashboardLayout({
+export default function DashboardTemplate({
   children,
 }: Readonly<{
   children: React.ReactNode;
@@ -10,11 +10,7 @@ export default function DashboardLayout({
   const [count ,setCount]=React.useState(0)
   return (
     <div className="border-2 border-dashed border-black p-4 w-1/2 mx-auto mt-10">
-      <div className="flex gap-4 font-bold text-lg mb-4 text-purple-500">
-        <Link href="/dashboard/about">About</Link>
-        <Link href="/dashboard/settings">Settings</Link>
-      </div>
-      <h2>dashboard Layout { count }</h2>
+      <h2>dashboard Template { count }</h2>
       <button onClick={()=>setCount(count+1)} className="bg-black text-white p-2 my-4 rounded-md cursor-pointer">Increment</button>
       {children}
     </div>
