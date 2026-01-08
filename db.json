@@ -1,0 +1,19 @@
+{
+  "posts": [
+    {
+      "id": "7admg71j",
+      "title": "rust 训练营",
+      "content": "rust从基础到进阶"
+    },
+    {
+      "id": "0nhrqnkk",
+      "title": "vue 训练营",
+      "content": "从基础到进阶"
+    },
+    {
+      "id": "um958krh",
+      "title": "训练营",
+      "content": "从基础到进阶"
+    }
+  ]
+}
