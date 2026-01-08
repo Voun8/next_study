@@ -20,10 +20,9 @@ export const metadata: Metadata = {
 };
 
 export default function RootLayout({
-  children,modal
+  children
 }: Readonly<{
   children: React.ReactNode,
-  modal:React.ReactNode,
 }>) {
   return (
     <html lang="en">
@@ -32,7 +31,6 @@ export default function RootLayout({
       >
         <AntdRegistry>
           {children}
-          {modal}
         </AntdRegistry>
       </body>
     </html>
