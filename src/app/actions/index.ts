@@ -24,7 +24,7 @@ export async function addTodo(prevState:{message:string},formData: FormData) {
   if(!validateFields.success){
     return {
       ...prevState,
-      message:validateFields.error?.flatten().fieldErrors.todo?.join(',')
+      message:validateFields.error?.flatten().fieldErrors.todo?.join(',')??'输入有误'
     }
   }
 
