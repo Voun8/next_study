@@ -8,7 +8,9 @@ export async function getTodos() {
   return data
 }
 
-export async function addTodo(formData:FormData) {
+export async function addTodo(formData: FormData) {
+  // console.log(Object.fromEntries(formData));
+  
   const todo = formData.get('todo') as string
   data.push(todo)
   revalidatePath('/')
